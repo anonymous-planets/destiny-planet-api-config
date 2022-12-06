@@ -21,7 +21,7 @@ eureka:
     instance:
       hostname: ${EUREKA_SERVER_HOST_NAME:localhost}
       port: ${server.port}
-      user:
-        name: ${spring.security.user.name}
-        password: ${spring.security.user.password}
+#      user:
+#        name: ${spring.security.user.name:admin}
+#        password: ${spring.security.user.password:admin}
   renewalPercentThreshold: 0.85
