@@ -24,6 +24,13 @@ spring:
       routes: # 라우팅할 마이크로 서비스
         - id: auth-service
           uri: lb://DESTINY-PLANET-AUTH-SERVICE
+          predicates: # 토큰 재발급
+            - Path=/auth/v1/api/token/member/re-issue,/auth/v1/api/token/admin/re-issue
+          filters:
+            - RewritePath=/auth/(?<path>.*),/$\{path}
+            - JwtRefreshTokenGatewayFilter
+        - id: auth-service
+          uri: lb://DESTINY-PLANET-AUTH-SERVICE
           predicates: # 로그인, 회원가입, 중복확인, 비밀번호 재설정
             # - Path=/auth/v1/api/token/**,/auth/*/*/auth/members/**,/auth/*/api/admin/auth/members/**
             - Path=/auth/v1/api/admin/member/login,/auth/v1/api/admin/member/join-request,/auth/v1/api/admin/member/join,/auth/v1/api/member/login,/auth/v1/api/member/join,
