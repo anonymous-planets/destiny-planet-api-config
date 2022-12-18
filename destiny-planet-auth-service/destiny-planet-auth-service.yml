@@ -1,7 +1,7 @@
 spring:
   config:
     import:
-      - planet-auth-service-variable.yml
+      # - planet-auth-service-variable.yml
       # - planet-oauth.yml
   profiles:
     group:
