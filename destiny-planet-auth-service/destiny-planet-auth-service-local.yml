@@ -40,25 +40,25 @@ spring:
       location: /sample # 파일 업로드시 임시로 저장하는 절대 경로
   thymeleaf: #메일에 사용될 html템플릿 파일 경로
     prefix: file:///C:/Develop/anonymous_planet/${spring.application.name}/html/
-  # mail: #메일 설정
-  #   default-sender: ENC(Q5OvCm5c0zLY0CfoBXPKhKaVpsi5+OFt4eE8+4bM1Ms=)
-  #   default-username: PLANET
-  #   default-encoding: UTF-8
-  #   host: smtp.gmail.com
-  #   port: 587
-  #   username: ENC(Q5OvCm5c0zLY0CfoBXPKhKaVpsi5+OFt4eE8+4bM1Ms=)
-  #   password: ENC(8h4Vhu+7ejtfFJE9LigftRdXcz4LHBBiR0ANNhaHq9E=)
-  #   properties:
-  #     mail:
-  #       smtp:
-  #         auth: true
-  #         starttls:
-  #           enable: true
-  #       debug: true
-  #     mime:
-  #       charset: UTF-8
-  #     transport:
-  #       protocol: smtp
+  mail: #메일 설정
+    default-sender: ENC(Q5OvCm5c0zLY0CfoBXPKhKaVpsi5+OFt4eE8+4bM1Ms=)
+    default-username: PLANET
+    default-encoding: UTF-8
+    host: smtp.gmail.com
+    port: 587
+    username: ENC(Q5OvCm5c0zLY0CfoBXPKhKaVpsi5+OFt4eE8+4bM1Ms=)
+    password: ENC(8h4Vhu+7ejtfFJE9LigftRdXcz4LHBBiR0ANNhaHq9E=)
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+        debug: true
+      mime:
+        charset: UTF-8
+      transport:
+        protocol: smtp
 planet:
   datasource:
     # username: ENC(Ic5GDdAnycFpcvxUfsWLSgnhJeTlBBVC)
