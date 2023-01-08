@@ -17,6 +17,8 @@ spring:
         max-attempts: 20
         max-interval: 15000
         multiplier: 1.1
+  kafka:
+    bootstrap-servers: localhost:9092
   datasource: # datasource 설정
     hikari:
       driver-class-name: com.mysql.cj.jdbc.Driver
@@ -41,13 +43,13 @@ spring:
   thymeleaf: #메일에 사용될 html템플릿 파일 경로
     prefix: file:///C:/Develop/anonymous_planet/${spring.application.name}/html/
   mail: #메일 설정
-    default-sender: ENC(Q5OvCm5c0zLY0CfoBXPKhKaVpsi5+OFt4eE8+4bM1Ms=)
+    default-sender: ENC(MV7gy44Y94Wx4TI4u4g3jIGp6IcE4lze)
     default-username: PLANET
     default-encoding: UTF-8
     host: smtp.gmail.com
     port: 587
-    username: ENC(Q5OvCm5c0zLY0CfoBXPKhKaVpsi5+OFt4eE8+4bM1Ms=)
-    password: ENC(8h4Vhu+7ejtfFJE9LigftRdXcz4LHBBiR0ANNhaHq9E=)
+    username: ENC(CxsPmuBYXJ1MByl8AQxGFIm6Xasr5wYvL7hJ5bD6XUhmFzGKznK8Hg==)
+    password: ENC(fRqa4lmvUzlvaoevpAVXI8nZKcKL1pNl/wEoAo4vRVA=)
     properties:
       mail:
         smtp:

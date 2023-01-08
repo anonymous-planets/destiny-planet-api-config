@@ -21,8 +21,6 @@ spring:
         - prod
         - prod-variable
         # - oauth
-  kafka:
-    bootstrap-servers: localhost:9092
   jpa:
     properties:
       hibernate:
