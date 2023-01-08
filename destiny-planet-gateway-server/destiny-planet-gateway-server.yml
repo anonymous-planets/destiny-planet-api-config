@@ -25,7 +25,7 @@ spring:
         - id: auth-service
           uri: lb://DESTINY-PLANET-AUTH-SERVICE
           predicates: # 로그인, 회원가입, 중복확인, 비밀번호 재설정
-            - Path=/auth/v1/api/admin-member/login,/auth/v1/api/admin-member/sign-in,/auth/v1/api/member/sign-in,/auth/v1/api/member/login
+            - Path=/auth/v1/api/admin-member/login,/auth/v1/api/admin-member/sign-in,/auth/v1/api/admin-member/**,/auth/v1/api/member/**
           filters:
             - RewritePath=/auth/(?<path>.*),/$\{path}
         - id: auth-service
