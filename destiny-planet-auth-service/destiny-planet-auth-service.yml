@@ -1,17 +1,17 @@
 spring:
   config:
     import:
-      # - planet-auth-service-variable.yml
+       - planet-auth-service-variable.yml
       # - planet-oauth.yml
   profiles:
     group:
       default:
         - local
-        # - local-variable
+         - local-variable
         # - oauth
       local:
         - local
-        # - local-variable
+         - local-variable
         # - oauth
       dev:
         - dev
@@ -55,7 +55,7 @@ jasypt:
 eureka:
   client:
     fetch-registry: true
-    register-with-eurekka: true
+    register-with-eureka: true
     instance:
       hostname: ${EUREKA_SERVER_HOST_NAME:localhost}
       port: ${EUREKA_SERVER_PORT:8761}

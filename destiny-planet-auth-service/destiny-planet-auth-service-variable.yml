@@ -17,6 +17,10 @@ file:
       file-min-count: 0
       file-max-count: 10
       file-total-size: 100
+invite:
+  admin:
+    email:
+      expire-time: 1000 * 60 * 30
 ---
 spring:
   config:
@@ -36,6 +40,10 @@ file:
       file-min-count: 0
       file-max-count: 10
       file-total-size: 100
+invite:
+  admin:
+    email:
+      expire-time: 1000 * 60 * 30
 ---
 spring:
   config:
@@ -55,3 +63,7 @@ file:
       file-min-count: 0
       file-max-count: 10
       file-total-size: 100
+invite:
+  admin:
+    email:
+      expire-time: 1000 * 60 * 30
