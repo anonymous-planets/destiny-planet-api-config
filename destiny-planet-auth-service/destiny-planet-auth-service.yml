@@ -7,11 +7,11 @@ spring:
     group:
       default:
         - local
-         - local-variable
+        - local-variable
         # - oauth
       local:
         - local
-         - local-variable
+        - local-variable
         # - oauth
       dev:
         - dev
