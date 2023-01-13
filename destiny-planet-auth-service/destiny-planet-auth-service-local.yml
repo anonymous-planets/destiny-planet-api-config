@@ -43,7 +43,7 @@ spring:
   thymeleaf: #메일에 사용될 html템플릿 파일 경로
     prefix: file:///C:/Develop/anonymous_planet/${spring.application.name}/html/
   mail: #메일 설정
-    default-sender: ENC(MV7gy44Y94Wx4TI4u4g3jIGp6IcE4lze)
+    default-sender: ENC(CxsPmuBYXJ1MByl8AQxGFIm6Xasr5wYvL7hJ5bD6XUhmFzGKznK8Hg==)
     default-username: PLANET
     default-encoding: UTF-8
     host: smtp.gmail.com
