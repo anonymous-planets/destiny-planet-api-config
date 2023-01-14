@@ -5,7 +5,6 @@ spring:
 
 site-url:
   admin: http://localhost:3000
-    sign-in: ${site-url.admin}/admin/sign-in/check
 
 file:
   upload:
@@ -35,7 +34,6 @@ spring:
       
 site-url:
   admin: http://localhost:3000
-    sign-in: ${site-url.admin}/admin/sign-in/check
 
 file:
   upload:
@@ -64,7 +62,6 @@ spring:
 
 site-url:
   admin: http://localhost:3000
-    sign-in: ${site-url.admin}/admin/sign-in/check
 
 file:
   upload:
