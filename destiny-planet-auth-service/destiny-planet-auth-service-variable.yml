@@ -2,6 +2,11 @@ spring:
   config:
     activate:
       on-profile: local-variable
+
+site-url:
+  admin: http://localhost:3000
+    sign-in: ${site-url.admin}/admin/sign-in/check
+
 file:
   upload:
     temp-path: C:/Develop/anonymous_planet/${spring.application.name}/upload/tmp 
@@ -17,6 +22,7 @@ file:
       file-min-count: 0
       file-max-count: 10
       file-total-size: 100
+
 invite:
   admin:
     email:
@@ -26,6 +32,11 @@ spring:
   config:
     activate:
       on-profile: dev-variable
+      
+site-url:
+  admin: http://localhost:3000
+    sign-in: ${site-url.admin}/admin/sign-in/check
+
 file:
   upload:
     profile:
@@ -40,6 +51,7 @@ file:
       file-min-count: 0
       file-max-count: 10
       file-total-size: 100
+
 invite:
   admin:
     email:
@@ -49,6 +61,11 @@ spring:
   config:
     activate:
       on-profile: prod-variable
+
+site-url:
+  admin: http://localhost:3000
+    sign-in: ${site-url.admin}/admin/sign-in/check
+
 file:
   upload:
     profile:
@@ -63,6 +80,7 @@ file:
       file-min-count: 0
       file-max-count: 10
       file-total-size: 100
+
 invite:
   admin:
     email:
