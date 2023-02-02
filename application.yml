@@ -3,7 +3,7 @@ server:
   shutdown: graceful
 eureka:
   client:
-    service-url:
+    serviceUrl:
       defaultZone: ${eureka.client.instance.user.protocol:http}://${eureka.client.instance.user.name:admin}:${eureka.client.instance.user.password:admin}@${eureka.client.instance.hostname:localhost}:${eureka.client.instance.port:8761}/eureka/
     registry-fetch-interval-seconds: 10 # 서비스 목록 캐싱(default : 30초)
     disable-delta: true # 캐싱할 때 변경된 부분만 업데이트
